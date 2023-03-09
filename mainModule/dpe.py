@@ -246,7 +246,6 @@ class DPE:
                     
    
     def modelInference(self, testImagesPath = None, outputDir = None, resize = None, validation = None, noiseSet = None, steps = None):
-    
         if not validation:
             self.modelLoad()
             print("\nInferencing on pretrained weights.")
@@ -258,7 +257,7 @@ class DPE:
             self.testImagesPath = testImagesPath
         if outputDir:
             self.resultDir = outputDir
-        
+
 
         modelInference = inference(gridSize=self.binnigFactor, inputRootDir=self.testImagesPath, outputRootDir=self.resultDir, modelName=self.modelName, validation=validation)
 

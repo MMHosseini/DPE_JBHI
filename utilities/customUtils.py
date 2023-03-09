@@ -155,6 +155,7 @@ def configWriter(config, path = 'mainModule/' ):
     return True
 
 def createDir(path):
+    print(path)
     # Create a directory to save processed samples
     Path(path).mkdir(parents=True, exist_ok=True)
     return True

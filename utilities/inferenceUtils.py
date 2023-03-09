@@ -40,7 +40,6 @@ class inference():
         self.resize = resize
         self.validation = validation
         self.unNormalize = UnNormalize()
-    
 
 
     def inputForInference(self, imagePath, noiseLevel):
@@ -76,9 +75,14 @@ class inference():
     
 
     def testingSetProcessor(self):
-
+        # testImageList = []
+        # data = os.listdir(self.inputRootDir)
+        # createDir(self.outputRootDir)
+        # for t in data:
+        #     testImageList.append(self.inputRootDir + t)
+        # print(testImageList)
+        # return testImageList
         testSets = glob.glob(self.inputRootDir+"*/")
-        #print (testSets)
         if self.validation:
             #print(self.validation)
             testSets = testSets[:1]

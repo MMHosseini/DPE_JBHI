@@ -5,6 +5,10 @@ from dataTools.processDataset import *
 from dataTools.patchExtractor import *
 from mainModule.dpe import *
 
+# python3 main.py - i - s /home/mehdi/Desktop/postureco/temp/DPE_JBHI/images/test_src/ -d /home/mehdi/Desktop/postureco/temp/DPE_JBHI/images/test_trgt/
+# python3 main.py -ts -e 20 -b 100
+
+
 if __name__ == "__main__":
 
     # Parsing Options
